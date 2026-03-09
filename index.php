@@ -6,8 +6,6 @@
 
 require "vendor/autoload.php";
 
-use App\Controllers\TaskController;
-
 $loader = new \Twig\Loader\FilesystemLoader('templates');
 $twig = new \Twig\Environment($loader, [
     'debug' => true
@@ -23,27 +21,7 @@ $controller = new TaskController($twig);
 
 switch ($uri) {
     case '/':
-        $controller->welcomePage();
-        break;
-
-    case 'add_task':
-        $controller->addTask();
-        break;
-
-    case 'check_task':
-        $controller->checkTask();
-        break;
-
-    case 'history':
-        $controller->historyPage();
-        break;
-
-    case 'uncheck_task':
-        $controller->uncheckTask();
-        break;
-
-    case 'about':
-        $controller->aboutPage();
+        echo "Home";
         break;
 
     default:

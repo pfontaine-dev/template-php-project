@@ -1,0 +1,1 @@
+{"version":1,"defects":[],"times":{"OrderControllerTest::testControllerReturnsDiscount":0.001,"DiscountServiceTest::testPremiumDiscount":0,"DiscountServiceTest::testVipDiscount":0,"DiscountServiceTest::testHighAmountExtraDiscount":0}}
